@@ -302,7 +302,9 @@ cor(users$ope, pred_o)
 
 
 # Prediction models based on LDA cluster memberships
+# The following models took several hours to run 
+# Uncomment the next 3 lines if you want to run them again
 
-Mlda <- LDA(M[!test, ], control=list(alpha=1, delta=.1, seed=68), k=50, method="Gibbs")
-temp<-posterior(Mlda, M)
-gamma<-as.data.frame(temp$topics)
+# Mlda <- LDA(M[!test, ], control=list(alpha=1, delta=.1, seed=68), k=50, method="Gibbs")
+# temp<-posterior(Mlda, M)
+# gamma<-as.data.frame(temp$topics)
